@@ -33,7 +33,7 @@ do {
 		} while (run);
 
 
-	system("pause");
+	
 
 	return 0;
 	
