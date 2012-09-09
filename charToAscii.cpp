@@ -50,6 +50,7 @@ void binary(int number)
 
 	remainder = number % 2;
 	binary(number >> 1);
+	cout << number << endl;
 	cout << remainder;
 
 }
