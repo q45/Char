@@ -16,9 +16,10 @@ do {
 
 	int myAscii = static_cast<int>(character);
 
-	cout << "please enter a positive integer and 0 to quit ";
+	cout << "please enter a positive integer and type 01 to quit ";
 	cin >> number;
-	if(number == 0){
+	if(number == 01  || number <= 0) {
+		cout << "You need to enter a number";
 		run = false;
 		cout << "Thanks for trying my converter " << endl;
 		exit;
@@ -27,7 +28,7 @@ do {
 	cout << number << " converted to binary is: " << endl;
 	binary(number);
 	cout << endl;
-		
+		cout << "ASCII is: " << endl;
 	cout << myAscii << endl;
 
 		} while (run);
